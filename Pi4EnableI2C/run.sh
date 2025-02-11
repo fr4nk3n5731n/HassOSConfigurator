@@ -6,8 +6,8 @@ echo $0
 
 nc -lk -p 8099 -e  echo -e 'HTTP/1.1 200 OK\r\nServer: DeskPiPro\r\nDate:$(date)\r\nContent-Type: text/html; charset=UTF8\r\nCache-Control: no-store, no cache, must-revalidate\r\n\r\n<!DOCTYPE html><html><body><p>HassOS I2C Configurator WebUI.  This is it. Impressive, right?</p></body></html>\r\n\n\n' & 
 
-config='dtparam=i2c_vc=on'
-config2='dtparam=i2c_arm=on'
+config='dtoverlay=dwc2,dr_mode=host'
+config2='dtoverlay=dwc2,dr_mode=host'
 until false; do
   set +e
   mkdir /tmp 2>/dev/null
