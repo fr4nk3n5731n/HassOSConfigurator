@@ -1,4 +1,4 @@
-# HassOS I2C Configurator
+# HassOS I2C Configurator (editor)
 Enables the Raspberry Pi I<sup>2</sup>C bus.  You can connect an SDCard and up to two hard disks or USB drives, which are detected as sda or sdb, and they will all have I<sup>2</sup>C enabled. 
 
 # Support
